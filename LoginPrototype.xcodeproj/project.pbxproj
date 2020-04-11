@@ -13,6 +13,8 @@
 		58A53AFB2442311B00F63B48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58A53AF92442311B00F63B48 /* Main.storyboard */; };
 		58A53AFD2442311D00F63B48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58A53AFC2442311D00F63B48 /* Assets.xcassets */; };
 		58A53B002442311D00F63B48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58A53AFE2442311D00F63B48 /* LaunchScreen.storyboard */; };
+		58A53B082442314B00F63B48 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A53B072442314B00F63B48 /* MainVC.swift */; };
+		58A53B0D2442322300F63B48 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A53B0C2442322300F63B48 /* Login.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		58A53AFC2442311D00F63B48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58A53AFF2442311D00F63B48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58A53B012442311D00F63B48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58A53B072442314B00F63B48 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		58A53B0C2442322300F63B48 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		58A53AF22442311B00F63B48 /* LoginPrototype */ = {
 			isa = PBXGroup;
 			children = (
+				58A53B09244231FC00F63B48 /* Login */,
 				58A53AF32442311B00F63B48 /* AppDelegate.swift */,
 				58A53AF52442311B00F63B48 /* SceneDelegate.swift */,
 				58A53AF72442311B00F63B48 /* ViewController.swift */,
@@ -65,6 +70,31 @@
 				58A53B012442311D00F63B48 /* Info.plist */,
 			);
 			path = LoginPrototype;
+			sourceTree = "<group>";
+		};
+		58A53B09244231FC00F63B48 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				58A53B0B2442320D00F63B48 /* UI */,
+				58A53B0A2442320700F63B48 /* Model */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		58A53B0A2442320700F63B48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		58A53B0B2442320D00F63B48 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				58A53B072442314B00F63B48 /* MainVC.swift */,
+				58A53B0C2442322300F63B48 /* Login.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +169,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				58A53AF82442311B00F63B48 /* ViewController.swift in Sources */,
+				58A53B0D2442322300F63B48 /* Login.swift in Sources */,
+				58A53B082442314B00F63B48 /* MainVC.swift in Sources */,
 				58A53AF42442311B00F63B48 /* AppDelegate.swift in Sources */,
 				58A53AF62442311B00F63B48 /* SceneDelegate.swift in Sources */,
 			);
@@ -216,7 +248,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
